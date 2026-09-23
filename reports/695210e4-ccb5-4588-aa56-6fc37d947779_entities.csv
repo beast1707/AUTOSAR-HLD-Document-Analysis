@@ -1,0 +1,32 @@
+id,document_id,type,name,description,page
+bd76a02f-1134-4f6a-a076-02fa4140f5b0,695210e4-ccb5-4588-aa56-6fc37d947779,Component,Crypto Service Manager,Extracted Software Component,4
+a1ee3f5e-a256-4fa2-9185-a5deb7d056d9,695210e4-ccb5-4588-aa56-6fc37d947779,Component,J1939 modules,Extracted Software Component,4
+3b46a48b-fb0a-42c2-8335-324e2ec55b63,695210e4-ccb5-4588-aa56-6fc37d947779,Component,Output Compare Unit Driver,Extracted Software Component,4
+2db6d3d4-c58d-4459-b04c-037e6f032130,695210e4-ccb5-4588-aa56-6fc37d947779,Component,Time Service,Extracted Software Component,4
+48d9542b-889d-45ed-8270-0b9ac7ea40e7,695210e4-ccb5-4588-aa56-6fc37d947779,Component,FlexRay Transport Layer FrArTp,Extracted Software Component,4
+62dfb6f3-bc1a-410b-97e0-d77b88bc144e,695210e4-ccb5-4588-aa56-6fc37d947779,Component,Ethernet stack extensions,Extracted Software Component,4
+254405a4-5f07-4c2a-b1d4-57a9caa8e168,695210e4-ccb5-4588-aa56-6fc37d947779,Interface,CAN,Extracted Interface,4
+94894436-03d7-4246-9cf8-cd8e48b852f9,695210e4-ccb5-4588-aa56-6fc37d947779,Interface,LIN,Extracted Interface,4
+52a5133d-5bab-492a-a12c-6fe23b5b6942,695210e4-ccb5-4588-aa56-6fc37d947779,Interface,Ethernet,Extracted Interface,4
+6b975f3f-abb3-448e-b37f-9242cf9e4737,695210e4-ccb5-4588-aa56-6fc37d947779,Interface,FlexRay,Extracted Interface,4
+54db8a58-56c7-49a3-9194-cbb5a1ca5cee,695210e4-ccb5-4588-aa56-6fc37d947779,Interface,J1939,Extracted Interface,4
+b2f37b4a-433a-4881-b847-10a687810964,695210e4-ccb5-4588-aa56-6fc37d947779,Port,CAN port,Extracted Port,4
+ba4e2f98-4c66-4a81-a664-6d31ca081078,695210e4-ccb5-4588-aa56-6fc37d947779,Port,LIN port,Extracted Port,4
+05a1b612-7817-40d5-8606-28a96a42be9f,695210e4-ccb5-4588-aa56-6fc37d947779,Port,Ethernet port,Extracted Port,4
+fcc07b9c-8d10-4fb4-a15f-8292960bb2d0,695210e4-ccb5-4588-aa56-6fc37d947779,Port,FlexRay port,Extracted Port,4
+3c8e7345-11f2-43e4-9c91-51ae1af75ff7,695210e4-ccb5-4588-aa56-6fc37d947779,Message,J1939 messages,Extracted Network Message,4
+5e55dcc5-89e9-4a5c-be04-22384cfde159,695210e4-ccb5-4588-aa56-6fc37d947779,Message,FlexRay messages,Extracted Network Message,4
+0b429a9e-10df-4c67-b2e2-464f2cc203a3,695210e4-ccb5-4588-aa56-6fc37d947779,Message,CAN messages,Extracted Network Message,4
+ee219ec7-67cc-4f99-8dfa-6b1ce960f410,695210e4-ccb5-4588-aa56-6fc37d947779,Message,LIN messages,Extracted Network Message,4
+8bd2e414-5a3e-4b98-acaf-41168a9da854,695210e4-ccb5-4588-aa56-6fc37d947779,Message,Ethernet frames,Extracted Network Message,4
+c1799a9f-96cf-4fd7-a2b8-9d35794fcc8e,695210e4-ccb5-4588-aa56-6fc37d947779,Component,Energy Management,Extracted Software Component,4
+a915a5c8-4546-4585-9f2a-6088050825c5,695210e4-ccb5-4588-aa56-6fc37d947779,Component,Diagnostic Event Manager (DEM),Extracted Software Component,4
+2cd8db23-88da-425c-83ce-82bc6533222d,695210e4-ccb5-4588-aa56-6fc37d947779,Component,EcuM,Extracted Software Component,4
+7f75ca6f-674f-4b74-8bdf-9284db4e740d,695210e4-ccb5-4588-aa56-6fc37d947779,Component,System Basis Chip,Extracted Software Component,4
+830b78a8-417a-45f7-872a-28693c4dfd59,695210e4-ccb5-4588-aa56-6fc37d947779,Interface,DEM symbol generation interface,Extracted Interface,4
+30cfd204-c977-41b4-b110-d535dd0f311a,695210e4-ccb5-4588-aa56-6fc37d947779,Interface,CDD access interface,Extracted Interface,4
+44b8d183-a09c-4b8d-9928-636779dd3231,695210e4-ccb5-4588-aa56-6fc37d947779,Port,AUTOSAR-ECU port,Extracted Port,4
+42ca9377-5d9c-42ce-b080-5a6f47fdb29e,695210e4-ccb5-4588-aa56-6fc37d947779,Port,System Basis Chip port,Extracted Port,4
+54ea873e-cf9f-4a34-acbd-dd33bcc2fc6f,695210e4-ccb5-4588-aa56-6fc37d947779,Signal,DBG text,Extracted Signal,4
+94b1f890-82ca-4345-9945-208527cbbe2a,695210e4-ccb5-4588-aa56-6fc37d947779,Signal,DLT text,Extracted Signal,4
+ce176b78-b194-4ff9-a04c-e05540a3bc59,695210e4-ccb5-4588-aa56-6fc37d947779,ECU,AUTOSAR-ECU,Extracted ECU,4

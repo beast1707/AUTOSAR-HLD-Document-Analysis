@@ -1,0 +1,44 @@
+# Environment files
+.env
+.env.*
+backend/.env
+frontend/.env
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Node
+node_modules/
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Streamlit
+.streamlit/
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Vector Stores
+faiss_index/
+chroma_db/
+chromadb/
+
+# Logs
+logs/
+*.log
+
+# IDEs
+.vscode/
+.idea/
