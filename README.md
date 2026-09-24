@@ -1,11 +1,11 @@
-# 🚗 AUTOSAR HLD Document Analysis Assistant
+#        AUTOSAR HLD Document Analysis Assistant
 
 <p align="center">
-  <b>An AI-powered engineering assistant for analyzing AUTOSAR High-Level Design (HLD) documents using Retrieval-Augmented Generation (RAG).</b>
+  <strong>AI-powered analysis and retrieval of AUTOSAR High-Level Design (HLD) documents using Retrieval-Augmented Generation (RAG).</strong>
 </p>
 
 <p align="center">
-  Extract Architecture Knowledge • Visualize Dependencies • Functional Workflow Analysis • Engineering Reports
+  Semantic Search • Architecture Extraction • Dependency Visualization • Functional Flow Analysis • Engineering Reports
 </p>
 
 <p align="center">
@@ -20,17 +20,17 @@
 
 ---
 
-## 📖 About the Project
+## Overview
 
-The **AUTOSAR HLD Document Analysis Assistant** is an AI-powered document analysis platform designed for automotive software engineers working with **AUTOSAR High-Level Design (HLD)** documents.
+The **AUTOSAR HLD Document Analysis Assistant** is an AI-powered engineering platform designed to simplify the analysis of **AUTOSAR High-Level Design (HLD)** documents.
 
-AUTOSAR HLDs contain hundreds of pages describing software architecture, communication stacks, Basic Software (BSW) modules, Runtime Environment (RTE), ECU abstraction layers, interfaces, and system workflows. Finding architecture information manually is time-consuming and makes traceability difficult.
+AUTOSAR HLDs contain hundreds of pages describing software architecture, communication stacks, Basic Software (BSW) modules, Runtime Environment (RTE), ECU abstraction layers, interfaces, and functional workflows. Searching and understanding these documents manually is time-consuming and makes architecture traceability difficult.
 
-This application transforms AUTOSAR HLD PDFs into an intelligent engineering knowledge base using **Retrieval-Augmented Generation (RAG)**. Engineers can upload AUTOSAR HLD documents, ask technical questions with page citations, explore architecture entities, visualize dependencies between modules, extract functional workflows, and generate engineering reports.
+This application converts AUTOSAR HLD PDFs into an intelligent engineering knowledge base using **Retrieval-Augmented Generation (RAG)**. Engineers can upload AUTOSAR HLD documents, ask technical questions with source citations, explore architecture entities, visualize module dependencies, extract functional workflows, and generate engineering reports.
 
 ---
 
-## ✨ Features
+## Features
 
 <table>
 <tr>
@@ -39,55 +39,55 @@ This application transforms AUTOSAR HLD PDFs into an intelligent engineering kno
 </tr>
 
 <tr>
-<td>📄 Document Upload</td>
+<td>Document Upload</td>
 <td>Upload AUTOSAR High-Level Design PDFs for semantic analysis.</td>
 </tr>
 
 <tr>
-<td>🔍 OCR Support</td>
+<td>OCR Support</td>
 <td>Automatically extracts text from scanned PDFs using Tesseract OCR fallback.</td>
 </tr>
 
 <tr>
-<td>🤖 AI Assistant</td>
-<td>Ask engineering questions in natural language and receive context-aware answers grounded in the uploaded HLD.</td>
+<td>AI Assistant</td>
+<td>Ask engineering questions in natural language and receive answers grounded in the uploaded HLD.</td>
 </tr>
 
 <tr>
-<td>📍 Source Citations</td>
-<td>Every AI response includes page references from the original AUTOSAR document.</td>
+<td>Source Citations</td>
+<td>Every AI response includes page references from the original document.</td>
 </tr>
 
 <tr>
-<td>🏗 Architecture Explorer</td>
+<td>Architecture Explorer</td>
 <td>Extracts Components, Interfaces, Ports, Signals, and Messages from the HLD.</td>
 </tr>
 
 <tr>
-<td>🕸 Dependency Graph</td>
-<td>Visualizes communication relationships between AUTOSAR software modules.</td>
+<td>Dependency Graph</td>
+<td>Visualizes relationships between AUTOSAR software modules.</td>
 </tr>
 
 <tr>
-<td>🔄 Functional Flow Summary</td>
+<td>Functional Flow Summary</td>
 <td>Automatically identifies architectural workflows described in the HLD.</td>
 </tr>
 
 <tr>
-<td>📑 Engineering Reports</td>
-<td>Exports Architecture Summary, Functional Flows, and Extracted Entities in PDF and CSV format.</td>
+<td>Engineering Reports</td>
+<td>Exports Architecture Summary, Functional Flows, and Extracted Entities in PDF and CSV formats.</td>
 </tr>
 
 <tr>
-<td>🧠 Persistent Knowledge Base</td>
-<td>Stores semantic embeddings using ChromaDB for fast document retrieval.</td>
+<td>Persistent Knowledge Base</td>
+<td>Stores semantic embeddings in ChromaDB for efficient retrieval.</td>
 </tr>
 
 </table>
 
 ---
 
-## 🏛 System Architecture
+## System Architecture
 
 ```mermaid
 flowchart TD
@@ -102,7 +102,7 @@ G[Sentence Transformer Embeddings]
 H[(ChromaDB Vector Database)]
 I[LangChain Retriever]
 J[Groq LLM]
-K[Answer + Page Citations]
+K[Answer with Page Citations]
 L[Streamlit Frontend]
 
 A --> B
@@ -123,67 +123,26 @@ K --> L
 
 ---
 
-## 🛠 Tech Stack
+## Technology Stack
 
-<table>
-<tr>
-<th width="30%">Category</th>
-<th>Technology</th>
-</tr>
-
-<tr>
-<td>Frontend</td>
-<td>Streamlit + Custom CSS</td>
-</tr>
-
-<tr>
-<td>Backend</td>
-<td>FastAPI, Uvicorn</td>
-</tr>
-
-<tr>
-<td>AI Framework</td>
-<td>LangChain</td>
-</tr>
-
-<tr>
-<td>LLM</td>
-<td>Groq API (Llama Model)</td>
-</tr>
-
-<tr>
-<td>Embeddings</td>
-<td>BAAI / bge-small-en-v1.5 (Sentence Transformers)</td>
-</tr>
-
-<tr>
-<td>Vector Database</td>
-<td>ChromaDB</td>
-</tr>
-
-<tr>
-<td>Metadata Database</td>
-<td>SQLite</td>
-</tr>
-
-<tr>
-<td>PDF Processing</td>
-<td>PyMuPDF, pdfplumber, Tesseract OCR</td>
-</tr>
-
-<tr>
-<td>Deployment</td>
-<td>Docker & Docker Compose</td>
-</tr>
-
-</table>
+| Category             | Technology                                     |
+| -------------------- | ---------------------------------------------- |
+| Frontend             | Streamlit, Custom CSS                          |
+| Backend              | FastAPI, Uvicorn                               |
+| AI Framework         | LangChain                                      |
+| Large Language Model | Groq API (Llama Model)                         |
+| Embeddings           | BAAI/bge-small-en-v1.5 (Sentence Transformers) |
+| Vector Database      | ChromaDB                                       |
+| Metadata Database    | SQLite                                         |
+| PDF Processing       | PyMuPDF, pdfplumber, Tesseract OCR             |
+| Deployment           | Docker, Docker Compose                         |
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
-AUTOSAR HLD Document Analysis Assistant
+AUTOSAR HLD Document Analysis Assistant/
 │
 ├── backend/
 │   ├── main.py
@@ -216,7 +175,7 @@ AUTOSAR HLD Document Analysis Assistant
 
 ---
 
-## 🚀 Getting Started
+## Installation
 
 ### 1. Clone the Repository
 
@@ -228,14 +187,14 @@ cd autosar-hld-document-analysis-assistant
 
 ### 2. Create a Virtual Environment
 
-#### Windows
+**Windows**
 
 ```bash
 python -m venv venv
 venv\Scripts\activate
 ```
 
-#### Linux / macOS
+**Linux / macOS**
 
 ```bash
 python3 -m venv venv
@@ -252,13 +211,11 @@ pip install -r requirements.txt
 
 Create a `.env` file in the project root.
 
-Example:
-
 ```env
 GROQ_API_KEY=your_groq_api_key
 ```
 
-> **Note:** Keep `.env` private. Use `.env.example` for GitHub.
+> **Important:** Keep `.env` private and do not commit it to GitHub. Use `.env.example` as a template.
 
 ### 5. Run the Backend
 
@@ -266,7 +223,7 @@ GROQ_API_KEY=your_groq_api_key
 uvicorn backend.main:app --reload --port 8000
 ```
 
-Backend URL:
+Backend runs at:
 
 ```text
 http://127.0.0.1:8000
@@ -280,7 +237,7 @@ Open another terminal.
 streamlit run frontend/app.py
 ```
 
-Frontend URL:
+Frontend runs at:
 
 ```text
 http://localhost:8501
@@ -288,51 +245,22 @@ http://localhost:8501
 
 ---
 
-## 📖 How to Use
+## Application Workflow
 
-<table>
-<tr>
-<th width="20%">Step</th>
-<th>Description</th>
-</tr>
-
-<tr>
-<td>1️⃣ Upload PDF</td>
-<td>Upload an AUTOSAR High-Level Design document from the Document Upload page.</td>
-</tr>
-
-<tr>
-<td>2️⃣ Automatic Indexing</td>
-<td>The backend parses the PDF, performs OCR if required, chunks the document, generates embeddings, and stores them in ChromaDB.</td>
-</tr>
-
-<tr>
-<td>3️⃣ Explore Architecture</td>
-<td>View extracted software components, interfaces, ports, signals, and messages.</td>
-</tr>
-
-<tr>
-<td>4️⃣ AI Question Answering</td>
-<td>Ask engineering questions and receive answers with page citations.</td>
-</tr>
-
-<tr>
-<td>5️⃣ Dependency Visualization</td>
-<td>Inspect relationships between AUTOSAR modules through an interactive graph.</td>
-</tr>
-
-<tr>
-<td>6️⃣ Export Reports</td>
-<td>Generate engineering reports in PDF and CSV format.</td>
-</tr>
-
-</table>
+| Step                     | Description                                                                                                |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------- |
+| Upload Document          | Upload an AUTOSAR High-Level Design PDF.                                                                   |
+| Document Processing      | Parse the PDF, perform OCR if needed, chunk the document, generate embeddings, and store them in ChromaDB. |
+| Architecture Extraction  | Identify software components, interfaces, ports, signals, and messages.                                    |
+| AI Question Answering    | Ask engineering questions and receive contextual answers with page citations.                              |
+| Dependency Visualization | Explore relationships between AUTOSAR modules through an interactive graph.                                |
+| Report Generation        | Export architecture summaries and extracted entities in PDF and CSV formats.                               |
 
 ---
 
-## 🤖 AI Assistant
+## AI Assistant
 
-The AI Assistant is powered by **Retrieval-Augmented Generation (RAG)** using LangChain and Groq.
+The AI Assistant uses a **Retrieval-Augmented Generation (RAG)** pipeline built with LangChain and Groq.
 
 ### Example Engineering Questions
 
@@ -352,14 +280,14 @@ Summarize the Services Layer.
 
 ### AI Response Includes
 
-* Context-aware engineering explanation.
+* Context-aware engineering explanations.
 * Semantic retrieval from the uploaded HLD.
 * Source page citations.
 * Structured markdown formatting.
 
 ---
 
-## 🏗 Architecture Explorer
+## Architecture Explorer
 
 Automatically extracts architectural entities from AUTOSAR HLD documents.
 
@@ -373,13 +301,13 @@ Automatically extracts architectural entities from AUTOSAR HLD documents.
 | Signals    | Communication Signals                        |
 | Messages   | CAN Messages, LIN Messages, FlexRay Messages |
 
-This provides a structured inventory of the uploaded architecture document.
+The extracted entities provide a structured inventory of the uploaded architecture document.
 
 ---
 
-## 🕸 Dependency Graph
+## Dependency Graph
 
-The Dependency Graph visualizes communication and dependency relationships between AUTOSAR modules.
+The Dependency Graph visualizes communication and dependency relationships between AUTOSAR software modules.
 
 ### Visualization Includes
 
@@ -392,7 +320,7 @@ This provides a high-level architectural overview directly from the uploaded HLD
 
 ---
 
-## 🔄 Functional Flow Summary
+## Functional Flow Summary
 
 The application identifies architectural workflows described inside the AUTOSAR HLD.
 
@@ -410,37 +338,37 @@ Each workflow includes an AI-generated engineering summary with document referen
 
 ---
 
-## 📑 Engineering Reports
+## Engineering Reports
 
 Generate structured engineering documentation directly from the uploaded HLD.
 
 ### PDF Report
 
-The exported PDF contains:
+The generated PDF includes:
 
-* Architecture Summary.
-* Dependency Summary.
-* Functional Workflow Summary.
-* Extracted Components.
-* Interfaces.
-* Architecture Statistics.
+* Architecture Summary
+* Dependency Summary
+* Functional Workflow Summary
+* Extracted Components
+* Interfaces
+* Architecture Statistics
 
 ### CSV Report
 
 The CSV export contains structured AUTOSAR entities including:
 
-* Components.
-* Interfaces.
-* Ports.
-* Signals.
-* Messages.
-* Source Pages.
+* Components
+* Interfaces
+* Ports
+* Signals
+* Messages
+* Source Pages
 
-Useful for architecture traceability and documentation review.
+This report can be used for architecture traceability and documentation review.
 
 ---
 
-## 📊 Complete Processing Pipeline
+## Processing Pipeline
 
 ```text
 Upload AUTOSAR HLD PDF
@@ -458,10 +386,10 @@ Generate Sentence Embeddings
  Store in ChromaDB
           │
           ▼
-   Semantic Retrieval
+ Semantic Retrieval
           │
           ▼
-       Groq LLM
+      Groq LLM
           │
           ▼
  AI Assistant • Architecture Explorer
@@ -471,28 +399,28 @@ Generate Sentence Embeddings
 
 ---
 
-## 🎯 Use Cases
+## Use Cases
 
-* AUTOSAR Architecture Review.
-* ECU Software Documentation Analysis.
-* Engineering Knowledge Search.
-* Architecture Traceability.
-* Functional Workflow Understanding.
-* AI-assisted Technical Documentation Review.
+* AUTOSAR Architecture Review
+* ECU Software Documentation Analysis
+* Engineering Knowledge Search
+* Architecture Traceability
+* Functional Workflow Understanding
+* AI-assisted Technical Documentation Review
 
 ---
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 * Semantic comparison between multiple AUTOSAR HLD versions.
 * Improved page-level traceability for extracted entities.
 * Signal-level dependency extraction from architecture diagrams.
 * Support for multiple AUTOSAR Classic Platform releases.
-* Optional FAISS/Pinecone vector database backend.
+* Optional FAISS or Pinecone vector database backend.
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Ayush Durukkar**
 
@@ -503,6 +431,6 @@ MIT World Peace University, Pune
 ---
 
 <p align="center">
-  <b>AUTOSAR HLD Document Analysis Assistant</b><br>
+  <strong>AUTOSAR HLD Document Analysis Assistant</strong><br/>
   AI-powered architecture understanding and engineering knowledge retrieval for AUTOSAR software documentation.
 </p>
